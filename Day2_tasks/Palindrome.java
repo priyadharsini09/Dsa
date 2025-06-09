@@ -1,6 +1,6 @@
 package Day2;
 import java.io.*;
-public class task3_pointers {
+public class Palindrome{
 	
 	    public static boolean isPalindrome(String s) {
 	        s = s.toLowerCase();
@@ -20,3 +20,6 @@ public class task3_pointers {
 	        }
 }
 }
+
+
+
