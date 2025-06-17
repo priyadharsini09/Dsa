@@ -1,0 +1,5 @@
+create database My_task1;
+use My_task1;
+Select * from Details
+where marks < 60;
+select name,department,section from Details;

@@ -1,0 +1,14 @@
+create database Person;
+use Person;
+create table Details
+(name varchar(50),marks int,department varchar(60),Section varchar(10));
+insert into Details values
+("Priya",75,"CS","B"),
+("Arun",80,"CS","A"),
+("Aravindh",56,"CS","C"),
+("Mohana",89,"CS","B"),
+("Madhu",88,"CS","B"),
+("Kalpana",55,"CS","B");
+select * from Details;
+
+
