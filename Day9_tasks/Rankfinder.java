@@ -1,0 +1,24 @@
+package Day9;
+public class Rankfinder {
+    public static int lowerBound(int[] arr, int target) {
+        int left = 0, right = arr.length;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (arr[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return left;
+    }
+    public static int findRank(int[] arr, int target) {
+        return lowerBound(arr, target);
+    }
+    public static void main(String[] args) {
+        int[] arr = {1, 3, 3, 5, 7, 9};
+        int target = 5;
+        int rank = findRank(arr, target);
+        System.out.println("Rank of " + target + " is: " + rank);
+    }
+}
